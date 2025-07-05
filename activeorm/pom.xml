@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ethanium.activeorm</groupId>
+  <artifactId>activeorm</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  <modules>
+    <module>activeorm-core</module>
+    <module>activeorm-processor</module>
+  </modules>
+  <properties>
+    <spring.boot.version>3.3.0</spring.boot.version>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+  </properties>
+</project>
