@@ -13,7 +13,7 @@
   ```java
   List<User> users = User.findAll();
   User admin = User.where(u -> u.getName().equals("admin"));
-  List<Site> sites = Site.where(s -> s.getStatus() == Status.ACTIVE).orderBy("createdAt").limit(10);
+  List<Role> roles = Role.where(r -> r.getStatus() == Status.ACTIVE).orderBy("createdAt").limit(10);
   ```
 - Custom `ActiveRecord<T>` superclass handles persistence logic.
 - Built-in annotation processor to auto-generate fluent static accessors.
@@ -73,7 +73,7 @@ The custom `@Reference` annotation is equivalent to Spring’s `@DBRef`, but dec
 
 ```java
 @Reference(cascade = CascadeMode.ALL)
-private List<Site> sites;
+private List<Role> roles;
 ```
 
 ---
